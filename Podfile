@@ -8,6 +8,7 @@ Target = Struct.new(:target, :platform, :platform_version)
 
   target "#{t.target} Tests".to_sym, exclusive: true do
     platform t.platform, t.platform_version
+    pod 'AFNetworking', '~> 2.0'
     pod 'OCMock', '~> 2.0'
   end
 end

@@ -26,6 +26,7 @@
 
 #import <URLMock/UMKMockHTTPResponder.h>
 
+#import <NSURLRequest+UMKHTTPConvenienceMethods.h>
 #import <URLMock/NSException+UMKSubclassResponsibility.h>
 
 
@@ -228,6 +229,10 @@ static NSString *const kUMKHTTP11VersionString = @"HTTP/1.1";
     if (!self.responding) return;
 
     [client URLProtocol:protocol didReceiveResponse:response cacheStoragePolicy:NSURLCacheStorageNotAllowed];
+
+    // Read and discard the request's body data
+    NSData *data = [protocol.request umk_HTTPBodyData];
+    data = nil;
 
     if (self.body) {
         // Don't break the data into more chunks than there are bytes. If the body length is below the minimum, just use one chunk.

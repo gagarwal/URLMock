@@ -42,6 +42,8 @@
 		4C33F7371878AA1700643799 /* NSURL+UMKQueryParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C33F7341878AA1700643799 /* NSURL+UMKQueryParameters.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C33F7381878AA1700643799 /* NSURL+UMKQueryParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C33F7351878AA1700643799 /* NSURL+UMKQueryParameters.m */; };
 		4C33F7391878AA1700643799 /* NSURL+UMKQueryParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C33F7351878AA1700643799 /* NSURL+UMKQueryParameters.m */; };
+		4C3C5F4C19A640CB00108924 /* UMKAFNetworkingIntegrationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3C5F4B19A640CB00108924 /* UMKAFNetworkingIntegrationTests.m */; };
+		4C3C5F4D19A640CB00108924 /* UMKAFNetworkingIntegrationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3C5F4B19A640CB00108924 /* UMKAFNetworkingIntegrationTests.m */; };
 		4C45E815182EAF44002F2096 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C45E814182EAF44002F2096 /* Foundation.framework */; };
 		4C45E840182EAFCB002F2096 /* UMKMockHTTPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C45E83B182EAFCB002F2096 /* UMKMockHTTPMessage.m */; };
 		4C45E841182EAFCB002F2096 /* UMKMockHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C45E83D182EAFCB002F2096 /* UMKMockHTTPRequest.m */; };
@@ -166,6 +168,7 @@
 		4C33F7351878AA1700643799 /* NSURL+UMKQueryParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+UMKQueryParameters.m"; sourceTree = "<group>"; };
 		4C34F629183346FB00AD2A6D /* UMKTestUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMKTestUtilities.h; sourceTree = "<group>"; };
 		4C34F62A183346FB00AD2A6D /* UMKTestUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMKTestUtilities.m; sourceTree = "<group>"; };
+		4C3C5F4B19A640CB00108924 /* UMKAFNetworkingIntegrationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMKAFNetworkingIntegrationTests.m; sourceTree = "<group>"; };
 		4C45E811182EAF44002F2096 /* libURLMock.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libURLMock.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C45E814182EAF44002F2096 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4C45E822182EAF44002F2096 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -456,6 +459,7 @@
 				4C6BFC53189DC67300F79BCF /* UMKIntegrationTestCase.m */,
 				4C31D33A1875B73100CD99F4 /* URLMockIntegrationTests.m */,
 				4C6BFC4F189DC5F200F79BCF /* UMKMockURLProtocolHTTPConvenienceMethodsTests.m */,
+				4C3C5F4B19A640CB00108924 /* UMKAFNetworkingIntegrationTests.m */,
 			);
 			path = "Integration Tests";
 			sourceTree = "<group>";
@@ -844,6 +848,7 @@
 				4C0FBDD5187DF70100D5C4B8 /* UMKURLConnectionVerifier.m in Sources */,
 				4C7A22ED1958EB5700C440AB /* UMKURLSessionDataTaskVerifier.m in Sources */,
 				4CD058C1187E12790071C2BF /* UMKURLEncodedParameterStringParserTests.m in Sources */,
+				4C3C5F4D19A640CB00108924 /* UMKAFNetworkingIntegrationTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -865,6 +870,7 @@
 				4C8A708A187E0DCB002E33A7 /* UMKRandomizedTestCase.m in Sources */,
 				4C7A22EC1958EB5700C440AB /* UMKURLSessionDataTaskVerifier.m in Sources */,
 				4C8F6032186158A900B3B2CB /* UMKURLConnectionVerifier.m in Sources */,
+				4C3C5F4C19A640CB00108924 /* UMKAFNetworkingIntegrationTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
